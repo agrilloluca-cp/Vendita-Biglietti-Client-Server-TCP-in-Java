@@ -29,7 +29,6 @@ public class Main {
         List usernames = new ArrayList<String>();
         ServerSocket ss = new ServerSocket(3000);
         Socket mySocket = ss.accept();
-        
 
         BufferedReader in = new BufferedReader(new InputStreamReader(mySocket.getInputStream()));
         PrintWriter out = new PrintWriter(mySocket.getOutputStream(), true);
